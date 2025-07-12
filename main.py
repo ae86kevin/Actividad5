@@ -26,7 +26,3 @@ print("Ingrese nota final")
 notafinal = input()
 
 
-
-
-
-
