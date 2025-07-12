@@ -1,15 +1,15 @@
 
-lista = []
-lista = []
+listaEstudiantes = []
+listaNotas = []
 class Estudiantes:
-    def __init__(self,nombre,carne,carrera,notafinal):
+    def __init__(self,nombre,carne,carrera):
         self.nombre = nombre
         self.carne = carne
         self.carrera = carrera
-        self.notafinal = notafinal
+
 
     def MostrarInformacino(self ):
-        print(self.nombre,self.carne,self.carrera,self.notafinal)
+        print(self.nombre,self.carne,self.carrera)
 
     def PromedioTotal(self):
         print("Promedio es")
@@ -22,7 +22,33 @@ print("Ingrese carne")
 carne = input()
 print("Ingrese carrera")
 carrera = input()
+
+
+
+estudianteNuevo= Estudiantes(nombre,carne,carrera)
+
+listaEstudiantes.append(estudianteNuevo)
+estudianteNuevo.MostrarInformacino()
+
 print("Ingrese nota final")
-notafinal = input()
+nota= input()
+
+listaNotas.append(nota)
+for item in listaNotas:
+    print(item)
+
+
+for i in range(len(listaNotas)):
+    print(listaNotas[i])
+
+
+
+
+
+
+
+
+
+
 
 
